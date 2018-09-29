@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Monk's Cafe</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	</head>
+<body>
+<script id="reservation-template" type="text/x-handlebars-template">
+	<tr>
+		<td>{{name}}</td>
+		<td>{{day}}</td>
+	</tr>
+</script>
+	<header>
+		<h1>Monk's Cafe</h1>
+	</header>
+		<section id="subheader">
+			<p>"THE COFFEE SHOP"</p>
+		</section>
+		<main>
+			<section id="splash">
+				<img src="assets/toms-restaurant.jpg" alt="tomsrestaurant" title="Tom's Restaurant">
+			</section>
+			<section>
+				<h2>Reservations</h2>
+<div class="reservation-form">
+	<form id="reservations">
+    <input type="text" placeholder="Joe Doe">
+    	<button type="button" data-toggle="dropdown">
+    	Choose A Day
+    	<span class="caret"></span>
+    </button>
+    <ul class="dropdown-day">
+    	<li><a>Today</a></li>
+    	<li><a>Tomorrow</a>
+    <li>The Next Day</a></li>
+</ul>
+</div>
+<button class="confirm-res">Confirm Reservation</button>
+</form>
+</div>
+</section>
+<section>
+	<h2 id="existing-res">Existing Reservations</h2>
+<div class="wrapper clearfix">
+		<table id="tablesettings">
+			<thead> 
+				<tr>
+				<th id="tableheads">Name</th>
+				<th id="tableheads">Day</th>
+			</tr>
+			<tbody>
+			<tr>
+				<td>   </td>
+				<td>   </td>
+				</tr>
+				<tr>
+				<td>   </td>
+				<td>   </td>
+				</tr>
+				</tbody>
+			</thead>
+		</table>
+</section>
+<section>
+		<p><h2>Come Dine with Us</h2></p>
+		<p>Insert Google Map Here...</p>
+</section>
+<section>
+		<p><h2>Customer Reviews</h2></p>
+				<img id="jerry" src="assets/jerry.jpg" alt="jerryseinfeld" title="Jerry Seinfeld">
+		<p class="quote">“Big lettuce, big carrots, tomatoes like volleyballs.”</p>
+		<p class="quote-author">— Jerry Seinfeld, on The BIG Salad</p>
+</section>
+</main>
+<footer>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+</footer>
+	<!-- Firebase -->
+	<script src=”https://www.gstatic.com/firebasejs/3.3.0/firebase.js”></script>
+	<!-- jQuery -->
+	<script src=”https://code.jquery.com/jquery-3.1.0.min.js”></script>
+	<!-- bootstrap js -->
+	<script src=”https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js”></script>
+	<!-- handlebars -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<!-- custom js -->
+	<script src=”main.js”></script>
+	<!-- map -->
+	<script src="xxxx"
+	async defer></script>
+</body>
+</html>
